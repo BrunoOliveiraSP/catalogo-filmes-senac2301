@@ -15,5 +15,5 @@ servidor.use(PingController);
 
 
 servidor.listen(process.env.PORT,
-                () => console.log(`API subiu com sucesso na porta ${process.env.PORT}`))
+                () => console.log(`...: API subiu com sucesso na porta ${process.env.PORT}`))
 

@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "98b53800-b954-46f5-99fc-cd74b34a6690",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:5000/filme",
+    "url": "http://localhost:5000/filme",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-02-27T19:07:57.014Z",
+    "modified": "2023-02-27T19:07:57.014Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]

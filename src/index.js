@@ -3,7 +3,8 @@ import express from 'express'
 import cors from 'cors'
 
 import PingController from './controller/PingController.js'
-import './repository/connection.js'
+import FilmeController from './controller/FilmeController.js'
+
 
 const servidor = express();
 servidor.use(cors());
@@ -11,7 +12,7 @@ servidor.use(express.json());
 
 
 servidor.use(PingController);
-
+servidor.use(FilmeController);
 
 
 servidor.listen(process.env.PORT,

@@ -4,17 +4,23 @@
     "colId": "history",
     "containerId": "",
     "name": "http://localhost:5000/filme",
-    "url": "http://localhost:5000/filme",
+    "url": "http://localhost:5000/filme/1/",
     "method": "GET",
     "sortNum": 0,
     "created": "2023-02-27T19:07:57.014Z",
-    "modified": "2023-03-06T18:55:44.888Z",
+    "modified": "2023-03-13T19:03:16.335Z",
     "headers": [],
     "params": [],
     "body": {
-      "type": "json",
-      "raw": "{\n  \"nome\": \"Better than us---\",\n  \"lancamento\": \"2022-01-10\",\n  \"avaliacao\": 8,\n  \"disponivel\": false,\n  \"sinopse\": \"Filme de robos----\"\n}",
-      "form": []
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "imagem",
+          "value": "..\\..\\..\\..\\..\\..\\..\\Downloads\\harry-capa.jpg"
+        }
+      ]
     },
     "tests": []
   }

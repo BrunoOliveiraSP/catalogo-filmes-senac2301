@@ -1,15 +1,17 @@
 import conexao from './connection.js'
 
 
-export async function listarFilmes() {
+export async function listarFilmes(nome) {
   const comando =
     `select id_filme        id,
             nm_filme        nome,
             dt_lancamento   lancamento,
             vl_avaliacao    avaliacao,
             bt_disponivel   disponivel 
-       from tb_filme`;
-  const resultado = await conexao.query(comando);
+       from tb_filme
+      where nm_filme like ?
+       `;
+  const resultado = await conexao.query(comando, '%' + nome + '%');
   return resultado[0];
 }
 
@@ -67,3 +69,13 @@ export async function removerFilme(id) {
   return resultado[0].affectedRows;
 }
 
+
+export async function alterarImagem(id, caminho) {
+  const comando = 
+    `update tb_filme 
+        set img_filme = ?
+      where id_filme  = ? `
+  
+  const resultado = await conexao.query(comando, [caminho, id])
+  return resultado[0].affectedRows;
+}
